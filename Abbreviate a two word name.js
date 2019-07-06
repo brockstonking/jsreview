@@ -8,3 +8,9 @@
 //
 // Patrick Feeney => P.F
 
+const toInitials = (name) => {
+    return name.split(' ').reduce( (r, e, i) => {
+        r.push(e.split('')[0].toUpperCase())
+        return r
+    }, []).join('.')
+}

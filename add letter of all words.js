@@ -6,3 +6,9 @@
 
 // Note: String will have at least one element; words will always be separated by a space.
 
+const addLength = (str) => {
+    return str.split(' ').reduce( (r, e, i) => {
+        r.push(`${ e } ${ e.split('').length }`)
+        return r
+    }, [])
+}

@@ -7,9 +7,14 @@
 // P.S. You have to create a new list and add the new item to that. Adding a new item to the input list is not going to work. However it is not the whole story.
 
 function addExtra( listOfNumbers ){
-  for (var i = 0; i <= listOfNumbers.length; i++){
-
+  // defines new list
+  let finalList = []
+  for (var i = 0; i < listOfNumbers.length; i++){
+    // recreates listOfNumbers in finalList
+    finalList.push(listOfNumbers[i])
   }
+  // adds extra number to the end of list
+  finalList.push(5)
+  // returns new list
   return finalList;
 }
-
