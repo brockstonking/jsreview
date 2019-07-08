@@ -13,4 +13,11 @@
 // character = "z"
 // after = "zzz"
 
-
+const mutated = (str, char) => {
+    return str === '' || char === '' 
+    ? '' 
+    : str.split('').reduce( (r, e, i) => {
+        r.push(char)
+        return r
+    }, []).join('')
+}

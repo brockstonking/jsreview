@@ -7,3 +7,6 @@
 // numberToString(123); // returns '123';`
 // numberToString(999); // returns '999';`
 
+const numberToString = (num) => {
+    return num.toString()
+}

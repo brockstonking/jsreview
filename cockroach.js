@@ -4,3 +4,7 @@
 //
 // cockroachSpeed(1.08) == 30
 // Note! The input is a Real number (actual type is language dependent) and is >= 0. The result should be an Integer.
+
+const cockroachSpeed = (num) => {
+    return Math.floor((num * 100000/3600))
+}

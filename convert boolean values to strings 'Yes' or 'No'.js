@@ -4,3 +4,6 @@
 
 // Return: a 'Yes' string for true and a 'No' string for false
 
+const bool = (val) => {
+    return val ? 'Yes' : 'No'
+}

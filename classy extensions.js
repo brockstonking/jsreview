@@ -10,3 +10,18 @@
 // Reference: JS, Ruby, Python, C#
 
 
+class Animal {
+    constructor(name){
+        this.name = name;
+        this.speak = function(){
+            return 'speak'
+        }
+    }
+};
+
+class Cat extends Animal {
+}
+const w = new Cat('whisk')
+w.speak = function(){
+    return `${ this.name } meows.`
+}

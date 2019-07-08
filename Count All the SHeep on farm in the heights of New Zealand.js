@@ -16,3 +16,12 @@
 
 
 
+const sheep = (one, two, total) => {
+    return total - (one.reduce( (r, e, i) => {
+        r += e
+        return r
+    }, 0) + two.reduce( (r, e, i) => {
+        r += e
+        return r
+    }, 0))
+}

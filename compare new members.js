@@ -18,3 +18,15 @@
 // ["Open", "Open", "Senior", "Open", "Open", "Senior"]
 
 
+const membership = (list) => {
+    return list.reduce( (r, e, i, a) => {
+        let age = a[i][0]
+        let handicap = a[i][1]
+        if (age >= 55 && handicap > 7) {
+            r.push('Senior')
+        } else {
+            r.push('Open')
+        }
+        return r
+    }, [])
+}

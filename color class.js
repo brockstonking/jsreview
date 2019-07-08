@@ -9,3 +9,11 @@
 // ghost = new Ghost();
 // ghost.color //=> "white" or "yellow" or "purple" or "red"
 
+class Ghost {
+    constructor(){
+        const colors = ['white', 'yellow', 'purple', 'red'];
+        this.color = function(){
+            return colors[Math.floor(Math.random() * 4)]
+        }
+    }
+}
