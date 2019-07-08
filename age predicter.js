@@ -13,3 +13,10 @@
 
 // Some random tests might fail due to a bug in the JavaScript implementation. Simply resubmit if that happens to you.
 
+function guessAges(){
+    var args = Array.prototype.slice.call(arguments);
+    return Math.floor(Math.sqrt(args.reduce( (r, e, i) => {
+        r += e * e
+        return r
+    }, 0))/2)
+}

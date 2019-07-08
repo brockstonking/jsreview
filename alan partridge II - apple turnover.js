@@ -13,6 +13,7 @@
 // Your job is simple, if (x) squared is more than 1000, return 'It's hotter than the sun!!', else, return 'Help yourself to a honeycomb Yorkie for the glovebox.'.
 //
 // X will be either an integer or a string. Both are valid.
-//
-// Other katas in this series:
 
+const sun = (num) => {
+    return Number(num) * Number(num) > 1000 ? `It's hotter than the sun!!` : `Help yourself to a ahoneycomb Yorkie for the glovebox.`
+}

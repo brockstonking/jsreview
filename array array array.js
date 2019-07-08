@@ -9,3 +9,24 @@
 // if (x) == ['a', 3] you should return [['a', 3], ['a', 3], ['a', 3]].
 
 
+const weirdScore = (arr) => {
+    const score = 
+        typeof arr[0] === 'number' && typeof arr[1] === 'number' 
+        ? arr[0] + arr[1]
+        : typeof arr[0] === 'number' && typeof arr[1] !== 'number' 
+        ? arr[0]
+        : typeof arr[0] !== 'number' && typeof arr[1] === 'number'
+        ? arr[1]
+        : typeof arr[0] !== 'number' && typeof arr[1] !== 'number' 
+        ? false
+        : null
+        if (score) {
+            let answers = [];
+            for (let i = 0; i < score; i++) {
+                answers.push(arr)
+            }
+            return answers
+        } else {
+            return 'Void!'
+        }
+}
