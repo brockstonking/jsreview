@@ -8,3 +8,6 @@
 //
 // For this kata, don't worry about edge cases like where unexpected input is passed to the function. You'll get to worry about these enough in later exercises.
 
+const boolean_to_string = (b) => {
+    return b ? 'true' : 'false'
+}

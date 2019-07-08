@@ -11,3 +11,14 @@
 // checkExam(["a", "a", "b", "c"], ["a", "a", "b", "c"]) → 16
 // checkExam(["b", "c", "b", "a"], ["",  "a", "a", "c"]) → 0
 
+const exam = (exam, student) => {
+    let score = 0;
+    for (let i = 0; i < exam.length; i++){
+        if (student[i] === exam[i]) {
+            score += 4
+        } else if (student[i] !== exam[i]) {
+            score -= 1
+        }
+    }
+    return score < 0 ? 0 : score
+}

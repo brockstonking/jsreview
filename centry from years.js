@@ -15,3 +15,11 @@
 
 // NOTE: for C++, cmath (i.e. math.h) is disallowed in this Kata, in particular the ceil function; otherwise, what is the fun of this Kata? ;)
 
+const cent = (year) => {
+    const period = [('' + year).split('')[('' + year).split('').length - 2], ('' + year).split('')[('' + year).split('').length - 2]].join('')
+    if (period > 0) {
+        return Number([('' + year).split('')[0], ('' + year).split('')[1]].join('')) + 1
+    } else {
+        return Number([('' + year).split('')[0], ('' + year).split('')[1]].join(''))
+    }
+}

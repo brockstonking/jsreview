@@ -4,3 +4,6 @@
 
 // Don't worry about numbers, special characters, or non-string types being passed to the function. The string lengths will be from 1 character up to 10 characters, but will never be empty.
 
+const toUpper = (str) => {
+    return `${ str.split('')[0].toUpperCase() }${ str.split('').splice(1).join('') }`
+}

@@ -12,3 +12,6 @@
 // (4, 1, 4)     ->  true
 // (15, -5, 3)   ->  true
 
+const is_divide_by = (a, b, c) => {
+    return a % b === 0 && a % c === 0 ? true : false
+}
