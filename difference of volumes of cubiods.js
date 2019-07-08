@@ -6,3 +6,12 @@
 //
 // If you can, try writing it in one line of code.
 
+const difference = (a, b) => {
+    return Math.abs(a.reduce( (r, e) => {
+        r *= e
+        return r
+    }, 1) - b.reduce( (r, e) => {
+        r *= e
+        return r
+    }, 1))
+}

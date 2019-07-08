@@ -1,7 +1,6 @@
 // Consider an array of sheep where some sheep may be missing from their place. We need a function that counts the number of sheep present in the array (true means present).
 
 // For example,
-
 // [true,  true,  true,  false,
 //   true,  true,  true,  true ,
 //   true,  false, true,  false,
@@ -12,3 +11,11 @@
 
 // Hint: Don't forget to check for bad values like null/undefined
 
+const sheep = (arr) => {
+    return arr.reduce( (r, e, i) => {
+        if (e === true){
+            r += 1
+        }
+        return r
+    }, 0)
+}

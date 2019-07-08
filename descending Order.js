@@ -9,3 +9,9 @@
 // Input: 1254859723 Output: 9875543221
 
 
+const descending = (num) => {
+    return [...num+''].reduce( (r, e, i) => {
+        r.push(Number(e))
+        return r
+    }, []).sort(((a, b) => {return b-a})).join('')
+}

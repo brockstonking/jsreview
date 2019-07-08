@@ -11,3 +11,16 @@
 // ('3♥') -> return 'hearts'
 // ('3♠') -> return 'spades'
 
+const suite = (card) => {
+    const icon = card.split('')[1]
+    return icon === '♣' 
+    ? 'clubs'
+    : icon === '♦'
+    ? 'diamonds'
+    : icon === '♥'
+    ? 'hearts'
+    : icon === '♠'
+    ? 'spades'
+    : null
+}
+

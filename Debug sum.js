@@ -4,3 +4,9 @@
 //
 // getSumOfDigits(123) // -> 6
 
+const getSumOfDigits = (num) => {
+    return num.toString().split('').reduce( (r, e, i) => {
+        r += Number(e)
+        return r
+    }, 0)
+}
