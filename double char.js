@@ -6,3 +6,11 @@
 
 // doubleChar("1234!_ ") ==> "11223344!!__  "
 // Good Luck!
+
+const doubles = (str) => {
+    return str.split('').reduce( (r, e) => {
+        r.push(e);
+        r.push(e);
+        return r;
+    }, []).join('')
+}

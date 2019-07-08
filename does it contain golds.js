@@ -2,3 +2,6 @@
 
 // So, you need to check if there is gold in the bucket, and if so, return True/true. If not, return False/false.
 
+const isThereGold = (arr) => {
+    return arr.indexOf('gold') !== -1 ? true : false
+}

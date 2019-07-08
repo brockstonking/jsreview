@@ -18,3 +18,13 @@
 // peopleWithAgeDrink(20) === "drink beer"
 // peopleWithAgeDrink(30) === "drink whisky"
 
+const whatToDrink = (age) => {
+    return age < 14 ? 'drink toddy' 
+    : age < 18 && age > 13 
+    ? 'drink coke' 
+    : age < 21 && age > 17 
+    ? 'drink beer' 
+    : age > 20 
+    ? 'drink whisky' 
+    : null
+}

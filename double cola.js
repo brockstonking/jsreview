@@ -13,6 +13,12 @@
 // Return the single line — the name of the person who drinks the n-th can of cola. The cans are numbered starting from 1.
 
 
-  
-
-  
+const doubles = (num) => {
+    let names = ['Sheldon', 'Leonard', 'Penny', 'Rajesh', 'Howard'];
+    for (let i = 0; i < num; i++) {
+        let toDouble = names.shift();
+        names.push(toDouble)
+        names.push(toDouble)
+    }
+    return names[names.length - 1]
+}

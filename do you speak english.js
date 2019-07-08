@@ -5,3 +5,7 @@
 // Upper or lower case letter does not matter -- "eNglisH" is also correct.
 
 // Return value as boolean values, true for the string to contains "English", false for it does not.
+
+const english = (str) => {
+    return str.toLowerCase().includes('english')
+}

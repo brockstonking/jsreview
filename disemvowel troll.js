@@ -6,3 +6,11 @@
 //
 // For example, the string "This website is for losers LOL!" would become "Ths wbst s fr lsrs LL!".
 
+const noVowels = (str) => {
+    return str.split('').reduce( (r, e) => {
+        if (e.toLowerCase() !== 'a' && e.toLowerCase() !== 'e' && e.toLowerCase() !== 'i' && e.toLowerCase() !== 'o' && e.toLowerCase() !== 'u') {
+            r.push(e)
+        }
+        return r
+    }, []).join('')
+}
